@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReadPublicNoteActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarReadPublicNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnImgBackArrow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/txwTitlePublicNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vazir"
+                android:text="متن نمونه"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/txwBodyPublicNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/vazir"
+        android:text="متن نمونه متن نمونه متن نمونه متن نمونه متن نمونه"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txwDatePublicNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/vazir"
+        android:text="2021/3/20"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+</LinearLayout>

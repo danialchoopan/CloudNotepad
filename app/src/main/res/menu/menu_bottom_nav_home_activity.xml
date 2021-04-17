@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/privateNotesFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="نوشته های من" />
+    <item
+        android:id="@+id/publicNotesFragment"
+        android:icon="@drawable/ic_baseline_speaker_notes_24"
+        android:title="نوشته های عمومی" />
+    <item
+        android:id="@+id/settingFragment"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="تنظیمات" />
+</menu>

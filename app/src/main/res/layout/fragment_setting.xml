@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".fragment.home.SettingFragment">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_baseline_person_24" />
+
+    <TextView
+        android:id="@+id/txwUserNameSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/vazir"
+        android:text="example"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txwUserEmailSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/vazir"
+        android:text="example@example.com"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnChangePasswordSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/vazir"
+            android:padding="15dp"
+            android:text="تغییر رمز عبور"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnLogoutSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/vazir"
+            android:padding="15dp"
+            android:text="خروج"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/vazir"
+            android:text="اندازه متن :"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rGroupBtnTextSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rBtnTextSizeSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/vazir"
+                android:text="کوچک"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rBtnTextSizeMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/vazir"
+                android:text="متوسط"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rBtnTextSizeLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/vazir"
+                android:text="بزرگ"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <ProgressBar
+            android:id="@+id/progressSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

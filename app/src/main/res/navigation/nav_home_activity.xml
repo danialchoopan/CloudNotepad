@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home_activity"
+    app:startDestination="@id/privateNotesFragment">
+
+    <fragment
+        android:id="@+id/privateNotesFragment"
+        android:name="ir.danialchoopan.cloudnotepad.fragment.home.PrivateNotesFragment"
+        android:label="fragment_private_posts"
+        tools:layout="@layout/fragment_private_notes" />
+    <fragment
+        android:id="@+id/publicNotesFragment"
+        android:name="ir.danialchoopan.cloudnotepad.fragment.home.PublicNotesFragment"
+        android:label="fragment_public"
+        tools:layout="@layout/fragment_public_notes" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="ir.danialchoopan.cloudnotepad.fragment.home.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+</navigation>

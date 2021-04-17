@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txwLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vazir"
+            android:text="ورود"
+            android:textSize="36sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtLayoutemailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtEmailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vazir"
+                android:hint="پست الکترونیک" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtLayoutemailPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_marginBottom="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtPasswordlLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vazir"
+                android:inputType="textPassword"
+                android:hint="رمز عبور" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/vazir"
+            android:text="ورود"
+            android:padding="15dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txw_open_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vazir"
+            android:text="قبلا ثبت نام کرده این همین حالا وارد شوید !"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>
